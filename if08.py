@@ -12,6 +12,31 @@ def main(number):
     Args:
         number: Number of the day.
     Returns:
-        str: return answer.
+        str: return answer
     """
-    return
+    number %= 7
+    
+    if number == 0:
+        answer = "Sunday"
+
+    elif number == 1:
+        answer = "Monday"
+
+    elif number == 2:
+        answer = "Tuesday"
+
+    elif number == 3:
+        answer = "Wednesday"
+
+    elif number == 4:
+        answer = "Thursday"
+
+    elif number == 5:
+        answer = "Friday"
+
+    else:
+        answer = "Saturday"
+    
+    return answer
+
+print(main(40))
