@@ -22,20 +22,20 @@ def main(n):
     n //= 10
 
     max = x1 
-    index = 1
+    index = 0
 
     if max < x2:
-        index += 1
+        index = 2
 
-    if max < x3:
-        index += 1
+    elif max < x3:
+        index = 3
 
-    if max < x4:
-        index += 1
+    elif max < x4:
+        index = 4
 
-    if max < x5: 
-        index += 1
+    else: 
+        index = 5
     
     return index
 
-print(main(87398))
+print(main(89788))
