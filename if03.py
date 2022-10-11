@@ -12,7 +12,7 @@ def main(a,b,c):
         return b
     if a >= b and a <= c:
         return a
-    if c >= a and c <= b:
+    if c >= b and c <= a:
         return c
 
 print(main(2, 32, 31))
